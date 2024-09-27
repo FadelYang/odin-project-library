@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="app.css" />
+    </head>
+    <body>
+        <div class="container">
+            <button class="add-book-show-form">Add Book</button>
+            <dialog>
+                <form action="#" id="addBookForm">
+                    <button class="add-book-close-form" autofocus>close</button>
+                    <div class="input-wrapper">
+                        <input
+                            type="text"
+                            placeholder="title"
+                            name="title"
+                            id="title"
+                            required
+                        />
+                        <input
+                            type="text"
+                            placeholder="author"
+                            name="author"
+                            id="author"
+                            required
+                        />
+                        <input
+                            type="text"
+                            placeholder="pages"
+                            name="pages"
+                            id="pages"
+                            required
+                        />
+                        <select name="isRead" id="isRead">
+                            <option value="read">Read</option>
+                            <option value="not read">Not Read</option>
+                        </select>
+                    </div>
+                    <button type="submit">Add</button>
+                </form>
+            </dialog>
+            <div class="books">
+                <div class="books-wrapper">
+
+            </div>
+        </div>
+        <script src="./app.js"></script>
+    </body>
+</html>
